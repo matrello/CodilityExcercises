@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MatroCodility
 {
-    public class Excercises
+    public class Exercises
     {
         public static int BinaryGap(int N)
         {

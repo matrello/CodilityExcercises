@@ -7,14 +7,14 @@ using System.Collections.Generic;
 namespace UnitTestProject1
 {
     [TestClass]
-    public class ExcercisesUnitTest
+    public class ExercisesUnitTest
     {
         [TestMethod]
         public void BinaryGap()
         {
             var input = new int[] { 9, 529, 20, 15, 1041 };
 
-            Array.ForEach(input, t => Debug.WriteLine("Input: {0} Output: {1}", t, Excercises.BinaryGap(t)));
+            Array.ForEach(input, t => Debug.WriteLine("Input: {0} Output: {1}", t, Exercises.BinaryGap(t)));
         }
 
         [TestMethod]
@@ -27,7 +27,7 @@ namespace UnitTestProject1
                 new int[] { 1, 2, 3, 4, 2, 3, 5, 5, 1 } };
 
             for (int seq = 0; seq < input.Count; seq++)
-                Debug.WriteLine("Sequence {0} Output: {1}", seq,  Excercises.OddOccurencesInArray2(input[seq]));
+                Debug.WriteLine("Sequence {0} Output: {1}", seq,  Exercises.OddOccurencesInArray2(input[seq]));
         }
 
         [TestMethod]
@@ -43,7 +43,7 @@ namespace UnitTestProject1
 
             for (int seq = 0; seq < input.Count; seq++)
             {
-                var output = Excercises.Rotate(input[seq], rot[seq]);
+                var output = Exercises.Rotate(input[seq], rot[seq]);
 
                 Debug.Write("Output: ", seq.ToString());
                 Array.ForEach(output, x => Debug.Write($"{x}, "));
@@ -75,7 +75,7 @@ namespace UnitTestProject1
                 input2[k] = rnd.Next(100000000);
 
             for (int seq = 0; seq < input.Count; seq++)
-                Debug.WriteLine("Sequence {0} Output: {1}", seq, Excercises.FloodDepth(input[seq]));
+                Debug.WriteLine("Sequence {0} Output: {1}", seq, Exercises.FloodDepth(input[seq]));
         }
 
         [TestMethod]
@@ -88,7 +88,7 @@ namespace UnitTestProject1
             for (int k = 0; k < 100000; k++)
                 input[k] = rnd.Next(100000000);
 
-            Debug.WriteLine("Large Sequence Output: {0}", Excercises.FloodDepth(input));
+            Debug.WriteLine("Large Sequence Output: {0}", Exercises.FloodDepth(input));
         }
 
     }
